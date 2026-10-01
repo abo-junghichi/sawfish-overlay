@@ -11,11 +11,12 @@ It is modified to directly use GIT Repositories of [the upstream][sawfish].
 These ebuilds follow [live ebuild scheme](https://wiki.gentoo.org/wiki/Live_ebuilds) which invokes "git clone".
 
 ### *-9998.ebuild
-They simply download the upstream snapshot zip-file to store it as "*-9998.zip" into distfiles-directory.
+They download upstream snapshot tarball to store it as "*-9998.tar.gz" into distfiles-directory.
 This means you should invoke "ebuild *-9998.ebuild digest" each time
 when upsteam modifies the repository.
 
-The ebuilds can be used at boxes without good connection to the internet
+Since snapshot tarball lacks it's repository history,
+these ebuilds can be used at boxes without good connection to the internet
 which fail to complete "git clone".
 
 [sawfish]: https://github.com/SawfishWM

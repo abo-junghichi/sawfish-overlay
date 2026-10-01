@@ -13,7 +13,7 @@ if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/SawfishWM/rep-gtk.git"
 else
-	SRC_URI="https://github.com/SawfishWM/rep-gtk/archive/refs/heads/master.zip -> ${P}.zip"
+	SRC_URI="https://github.com/SawfishWM/rep-gtk/archive/refs/heads/master.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${PN}-master"
 	KEYWORDS="~alpha amd64 ~ia64 ppc ~ppc64 sparc x86"
 fi
